@@ -7,5 +7,7 @@
 <img *ngIf="animal === 'Perro'" src="https://cdn2.thedogapi.com/images/HkNpfppEm.gif" />
 
 <h3>{{question}}</h3>
-<button>Sí</button>
-<button>No</button>
+<button (click)="answer('Si')" >Sí</button>
+<button (click)="answer('No')" >No</button>
+<br /><br />
+<p>Tu Respuesta es:&nbsp;&nbsp;<b>{{response | emoji}}</b></p>
