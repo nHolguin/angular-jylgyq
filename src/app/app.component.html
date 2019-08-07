@@ -1,0 +1,11 @@
+<h1>Qu&eacute; Prefieres?</h1>
+<p>Perro o Gato</p>
+
+<input [(ngModel)]="animal" type="text" />
+<br /><br />
+<img *ngIf="animal === 'Gato'" src="https://cdn2.thecatapi.com/images/dbr.gif" />
+<img *ngIf="animal === 'Perro'" src="https://cdn2.thedogapi.com/images/HkNpfppEm.gif" />
+
+<h3>{{question}}</h3>
+<button>Sí</button>
+<button>No</button>
