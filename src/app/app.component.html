@@ -11,3 +11,16 @@
 <button (click)="answer('No')" >No</button>
 <br /><br />
 <p>Tu Respuesta es:&nbsp;&nbsp;<b>{{response | emoji}}</b></p>
+
+<br />
+<form>
+  <div>
+    <input type="search" placeholder="{{question_two}}" #search />
+  </div>
+  <br />
+  <button (click)="answerQuestion(search.value)">{{btnResutl}}</button>
+</form>
+<div *ngIf="result">
+  <h1>{{result.answer | uppercase}}</h1>
+  <img [src]="result.image" alt="" />
+</div>
